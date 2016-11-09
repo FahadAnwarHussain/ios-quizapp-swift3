@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H6z-E4-HiS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Swift 3.0 Quiz-->
+        <scene sceneID="dqk-gX-6jN">
+            <objects>
+                <viewController title="Welcome Swift 3.0 Quiz" id="H6z-E4-HiS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eUr-Cr-RG3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gm7-v0-euz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WWe-b4-h5W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="550" image="Quiz v1" translatesAutoresizingMaskIntoConstraints="NO" id="1nL-5Y-u3o"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytb-g2-QgU">
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.22352941176470589" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="rZ4-q7-Ast"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="1ar-qi-Dan"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ytb-g2-QgU" firstAttribute="bottom" secondItem="Gm7-v0-euz" secondAttribute="top" id="E2j-9e-zFL"/>
+                            <constraint firstItem="1nL-5Y-u3o" firstAttribute="top" secondItem="WWe-b4-h5W" secondAttribute="top" id="EDT-0w-pbE"/>
+                            <constraint firstItem="ytb-g2-QgU" firstAttribute="leading" secondItem="1nL-5Y-u3o" secondAttribute="leading" id="RXf-oj-9O0"/>
+                            <constraint firstItem="ytb-g2-QgU" firstAttribute="top" secondItem="1nL-5Y-u3o" secondAttribute="bottom" id="XNB-se-vf5"/>
+                            <constraint firstAttribute="trailing" secondItem="1nL-5Y-u3o" secondAttribute="trailing" id="ZbI-PQ-0rr"/>
+                            <constraint firstItem="1nL-5Y-u3o" firstAttribute="leading" secondItem="WWe-b4-h5W" secondAttribute="leading" id="jG1-vZ-KVv"/>
+                            <constraint firstItem="ytb-g2-QgU" firstAttribute="trailing" secondItem="1nL-5Y-u3o" secondAttribute="trailing" id="xAk-2X-Kvd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKD-83-VsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="1105.9970014992505"/>
+        </scene>
+        <!--Swift 3.0 Quiz-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Swift 3.0 Quiz" id="BYZ-38-t0r" customClass="ViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RN-Jv-k6y">
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.34901960780000002" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0p-ZY-ujP">
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.50196078430000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mph-Rf-sKf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsY-fu-kR8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-4C-8oR">
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.50196078430000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ql7-Tt-7VT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <color key="tintColor" red="0.97647058819999999" green="0.50196078430000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2OB-4o-MyS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECG-Uq-on1">
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.50196078430000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Od2-sk-d6K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pf9-Gz-ep4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaj-mK-YrV">
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.50196078430000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4sM-U3-IF0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXW-mV-8Sc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlI-k4-4Ce">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AxF-Qc-tGy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.34901960780000002" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJq-Q5-rRu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.24705882352941178" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.97647058819999999" green="0.50196078430000002" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qaj-mK-YrV" firstAttribute="trailing" secondItem="ECG-Uq-on1" secondAttribute="trailing" id="AWB-7W-fTn"/>
+                            <constraint firstItem="G0p-ZY-ujP" firstAttribute="leading" secondItem="qaj-mK-YrV" secondAttribute="leading" id="HnU-y9-LEP"/>
+                            <constraint firstItem="ECG-Uq-on1" firstAttribute="trailing" secondItem="gKT-4C-8oR" secondAttribute="trailing" id="K8S-Qh-tih"/>
+                            <constraint firstItem="gKT-4C-8oR" firstAttribute="top" secondItem="ECG-Uq-on1" secondAttribute="bottom" constant="8" symbolic="YES" id="LNw-bK-z5L"/>
+                            <constraint firstItem="gKT-4C-8oR" firstAttribute="trailing" secondItem="rlI-k4-4Ce" secondAttribute="trailing" id="O1M-X8-GpR"/>
+                            <constraint firstItem="qaj-mK-YrV" firstAttribute="leading" secondItem="ECG-Uq-on1" secondAttribute="leading" id="O6C-pV-B9N"/>
+                            <constraint firstItem="9RN-Jv-k6y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="Tvf-f9-rPv"/>
+                            <constraint firstItem="ECG-Uq-on1" firstAttribute="top" secondItem="qaj-mK-YrV" secondAttribute="bottom" constant="8" symbolic="YES" id="V1F-nJ-cPJ"/>
+                            <constraint firstAttribute="trailing" secondItem="9RN-Jv-k6y" secondAttribute="trailing" id="Vhv-M1-6Zk"/>
+                            <constraint firstItem="G0p-ZY-ujP" firstAttribute="top" secondItem="9RN-Jv-k6y" secondAttribute="bottom" constant="21" id="Xbx-eK-W6M"/>
+                            <constraint firstItem="9RN-Jv-k6y" firstAttribute="leading" secondItem="G0p-ZY-ujP" secondAttribute="leading" id="Xeq-ui-Z08"/>
+                            <constraint firstItem="rlI-k4-4Ce" firstAttribute="top" secondItem="gKT-4C-8oR" secondAttribute="bottom" constant="46" id="Yf4-tE-uXG"/>
+                            <constraint firstItem="9RN-Jv-k6y" firstAttribute="trailing" secondItem="G0p-ZY-ujP" secondAttribute="trailing" id="ZDl-bm-lhf"/>
+                            <constraint firstItem="gKT-4C-8oR" firstAttribute="leading" secondItem="rlI-k4-4Ce" secondAttribute="leading" id="agQ-fS-0hT"/>
+                            <constraint firstItem="9RN-Jv-k6y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fhY-Lp-X9X"/>
+                            <constraint firstItem="ECG-Uq-on1" firstAttribute="leading" secondItem="gKT-4C-8oR" secondAttribute="leading" id="gk5-k5-vZC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rlI-k4-4Ce" secondAttribute="bottom" constant="67" id="hRd-u8-j27"/>
+                            <constraint firstItem="G0p-ZY-ujP" firstAttribute="trailing" secondItem="qaj-mK-YrV" secondAttribute="trailing" id="xJr-Rl-ZjH"/>
+                            <constraint firstItem="qaj-mK-YrV" firstAttribute="top" secondItem="G0p-ZY-ujP" secondAttribute="bottom" constant="8" symbolic="YES" id="z1u-n7-FXj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstButton" destination="G0p-ZY-ujP" id="y0o-Kh-ZYJ"/>
+                        <outlet property="fourthButton" destination="gKT-4C-8oR" id="TTa-hH-LuF"/>
+                        <outlet property="nextBtn" destination="rlI-k4-4Ce" id="XTY-bw-ht5"/>
+                        <outlet property="questLabel" destination="9RN-Jv-k6y" id="pgj-Ub-sFN"/>
+                        <outlet property="secondButton" destination="qaj-mK-YrV" id="iQd-lj-8hI"/>
+                        <outlet property="thirdButton" destination="ECG-Uq-on1" id="lfM-2q-mwZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.79999999999995" y="1115.8920539730136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Quiz v1" width="504" height="468"/>
+    </resources>
+</document>
